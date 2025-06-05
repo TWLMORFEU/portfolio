@@ -71,52 +71,80 @@ section h2 {
 }
 
 
-#social-links ul.social-icons { /* Adicionei a classe "social-icons" para ser mais específico */
-    list-style: none;
+/* style.css */
+
+
+
+.social-links-section {
+    text-align: center;
+    padding: 30px;
+    background-color: #111111;
+    border-radius: 12px;
+    box-shadow: 9px 19px 17px nova imagnsrgba(0, 0, 0, 0.1);
+}
+
+.social-links-section h2 {
+    color: #636363;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.social-image-links {
+    list-style: none; /* Remove os marcadores de lista padrão */
     padding: 0;
-    display: flex; /* Para alinhar os ícones um ao lado do outro */
-    justify-content: center;
-    flex-direction: row; /* Centraliza os ícones */
-    flex-wrap: wrap; /* Permite que os ícones quebrem a linha se não couberem */
-    gap: 25px; /* Espaçamento maior entre os ícones */
-    margin-top: 20px;
+    margin: 0;
+    
+    display: flex; /* **CHAVE:** Coloca os itens um ao lado do outro */
+    justify-content: center; /* **CHAVE:** Centraliza os itens horizontalmente */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha em telas menores */
+    gap: 25px; /* Espaço entre os círculos */
 }
 
-#social-links ul.social-icons li {
-    margin-bottom: 0; /* Remove a margem vertical entre os itens de lista */
+.social-image-links li {
+    /* Não precisa de margem vertical aqui, o 'gap' já cuida disso */
 }
 
-#social-links ul.social-icons a {
-    display: inline-flex; /* Usa flexbox para centralizar o ícone dentro do link */
-    align-items: center; /* Alinha verticalmente o ícone */
-    justify-content: center; /* Alinha horizontalmente o ícone */
-    width: 55px; /* Tamanho do círculo/quadrado do ícone */
-    height: 55px; /* Tamanho do círculo/quadrado do ícone */
-    background-color: #007bff; /* Cor de fundo do ícone */
-    color: #fff; /* Cor do ícone */
-    border-radius: 50%; /* Torna o background circular */
-    text-decoration: none;
-    font-size: 2.2em; /* Tamanho do ícone em si */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Efeito de transição */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+.social-image-links a {
+    /* Estilo do CÍRCULO e do LINK */
+    display: block; /* Garante que o link ocupe todo o espaço do círculo */
+    width: 70px; /* Largura do círculo */
+    height: 70px; /* Altura do círculo (igual à largura para ser redondo) */
+    border-radius: 50%; /* **CHAVE:** Transforma o elemento em um círculo */
+    overflow: hidden; /* **CHAVE:** Corta qualquer parte da imagem que saia do círculo */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra para dar profundidade */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito suave ao passar o mouse */
+    background-color: #e0e0e0; /* Cor de fundo para o círculo (se a imagem não preencher tudo) */
 }
 
-#social-links ul.social-icons a:hover {
-    background-color: #0056b3; /* Cor ao passar o mouse */
-    transform: translateY(-5px); /* Levanta o ícone ligeiramente ao passar o mouse */
+.social-image-links a:hover {
+    transform: translateY(-7px); /* Efeito de "levantar" ao passar o mouse */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25); /* Sombra mais forte no hover */
 }
 
-/* Opcional: Cores específicas para cada rede social (se quiser!) */
-#social-links ul.social-icons li:nth-child(1) a { background-color: #0A66C2; } /* LinkedIn */
-#social-links ul.social-icons li:nth-child(2) a { background-color: #333; }   /* GitHub */
-#social-links ul.social-icons li:nth-child(3) a {
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-} /* Instagram com gradiente */
-#social-links ul.social-icons li:nth-child(4) a { background-color: #000; }   /* X (Twitter) */
-#social-links ul.social-icons li:nth-child(5) a { background-color: #1877F2; } /* Facebook */
+.social-image-links a img {
+    /* Estilo da IMAGEM DENTRO do círculo */
+    width: 100%; /* A imagem ocupa 100% da largura do círculo */
+    height: 100%; /* A imagem ocupa 100% da altura do círculo */
+    object-fit: cover; /* **CHAVE:** Faz a imagem preencher o espaço sem distorcer, cortando as bordas */
+    display: block; /* Remove o espaço extra que navegadores podem adicionar abaixo das imagens */
+    border-radius: 50%; /* Opcional: Para garantir que a imagem também seja redonda internamente */
+}
+
+/* Responsividade básica para telas menores */
+@media (max-width: 600px) {
+    .social-image-links a {
+        width: 60px; /* Diminui o tamanho dos círculos em telas menores */
+        height: 60px;
+    }
+    .social-image-links {
+        gap: 15px; /* Reduz o espaço entre eles */
+    }
+    .social-links-section h2 {
+        font-size: 1.6em;
+    }
+}
 
 
-/* Responsividade para telas menores, se necessário ajustar o tamanho dos ícones */
 @media (max-width: 480px) {
     #social-links ul.social-icons a {
         width: 45px;
