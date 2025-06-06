@@ -46,7 +46,7 @@ header h1 {
 .tagline {
     font-style: italic;
     font-size: 1.1em;
-    color: #ccc;
+    color: #cccbcb;
 }
 
 /* Seções Principais */
@@ -65,26 +65,115 @@ section {
 
 section h2 {
     color: #c4c4c4;
-    border-bottom: 2px solid #8d8888;
+    border-bottom: 2px solid #747171;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
 
 
-/* style.css */
+section#stack {
+    text-align: center;
+    padding: 30px;
+    background-color: #0e0e0e;
+    border-radius: 12px;
+    box-shadow: 9px 19px 17px nova imagnsrgba(0, 0, 0, 0.1);
+}
 
+section#stack li {
+    list-style: none;
+    margin-top: 10px;
+    
+}
+
+.stack-links {
+    list-style: none; /* Remove os marcadores de lista padrão */
+    padding: 0;
+    margin: 0;
+    
+    display: flex; /* **CHAVE:** Coloca os itens um ao lado do outro */
+    justify-content: space-evenly; /* **CHAVE:** Centraliza os itens horizontalmente */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha em telas menores */
+    gap: 25px; /* Espaço entre os círculos */
+}
+
+.stack-links p {
+    text-align: center;
+    
+}
+
+.stack-links img {
+    /* Estilo do CÍRCULO e do LINK */
+    display: block; /* Garante que o link ocupe todo o espaço do círculo */
+    width: 70px; /* Largura do círculo */
+    height: 70px; /* Altura do círculo (igual à largura para ser redondo) */
+    border-radius: 50%; /* **CHAVE:** Transforma o elemento em um círculo */
+    overflow: hidden; /* **CHAVE:** Corta qualquer parte da imagem que saia do círculo */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra para dar profundidade */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito suave ao passar o mouse */
+    background-color: white; /* Cor de fundo para o círculo (se a imagem não preencher tudo) */
+    border: 2px solid rgb(255, 255, 255);
+}
+
+section#stack img:hover {
+    transform: translateY(-7px); /* Efeito de "levantar" ao passar o mouse */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25); /* Sombra mais forte no hover */
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.carousel-projects {
+  width: 60vw;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.project {
+  display: none;
+  text-align: center;
+  background: #f2f2f2;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.project.active {
+  display: block;
+}
+
+button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
+  color: #bbb9b9;
+}
 
 
 .social-links-section {
     text-align: center;
     padding: 30px;
-    background-color: #111111;
+    background-color: #0e0e0e;
     border-radius: 12px;
     box-shadow: 9px 19px 17px nova imagnsrgba(0, 0, 0, 0.1);
 }
 
 .social-links-section h2 {
-    color: #636363;
+    color: #c2bdbd;
     margin-bottom: 30px;
     font-size: 2em;
 }
@@ -100,10 +189,6 @@ section h2 {
     gap: 25px; /* Espaço entre os círculos */
 }
 
-.social-image-links li {
-    /* Não precisa de margem vertical aqui, o 'gap' já cuida disso */
-}
-
 .social-image-links a {
     /* Estilo do CÍRCULO e do LINK */
     display: block; /* Garante que o link ocupe todo o espaço do círculo */
@@ -114,6 +199,7 @@ section h2 {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra para dar profundidade */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito suave ao passar o mouse */
     background-color: #e0e0e0; /* Cor de fundo para o círculo (se a imagem não preencher tudo) */
+    border: 2px solid rgb(255, 255, 255);
 }
 
 .social-image-links a:hover {
@@ -128,6 +214,7 @@ section h2 {
     object-fit: cover; /* **CHAVE:** Faz a imagem preencher o espaço sem distorcer, cortando as bordas */
     display: block; /* Remove o espaço extra que navegadores podem adicionar abaixo das imagens */
     border-radius: 50%; /* Opcional: Para garantir que a imagem também seja redonda internamente */
+    
 }
 
 /* Responsividade básica para telas menores */
