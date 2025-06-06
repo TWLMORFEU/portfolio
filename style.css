@@ -89,7 +89,6 @@ section#stack li {
     list-style: none; /* Remove os marcadores de lista padrão */
     padding: 0;
     margin: 0;
-    
     display: flex; /* **CHAVE:** Coloca os itens um ao lado do outro */
     justify-content: space-evenly; /* **CHAVE:** Centraliza os itens horizontalmente */
     flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha em telas menores */
@@ -102,6 +101,7 @@ section#stack li {
 }
 
 .stack-links img {
+   
     /* Estilo do CÍRCULO e do LINK */
     display: block; /* Garante que o link ocupe todo o espaço do círculo */
     width: 70px; /* Largura do círculo */
@@ -119,50 +119,6 @@ section#stack img:hover {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25); /* Sombra mais forte no hover */
 }
 
-.carousel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 30px;
-}
-
-.carousel-projects {
-  width: 60vw;
-  height: auto;
-  overflow: hidden;
-  position: relative;
-}
-
-.project {
-  display: none;
-  text-align: center;
-  background: #f2f2f2;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.project img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
-}
-
-.project.active {
-  display: block;
-}
-
-button {
-  background: none;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-  user-select: none;
-  color: #bbb9b9;
-}
-
 
 .social-links-section {
     text-align: center;
@@ -170,6 +126,7 @@ button {
     background-color: #0e0e0e;
     border-radius: 12px;
     box-shadow: 9px 19px 17px nova imagnsrgba(0, 0, 0, 0.1);
+    
 }
 
 .social-links-section h2 {
@@ -182,7 +139,6 @@ button {
     list-style: none; /* Remove os marcadores de lista padrão */
     padding: 0;
     margin: 0;
-    
     display: flex; /* **CHAVE:** Coloca os itens um ao lado do outro */
     justify-content: center; /* **CHAVE:** Centraliza os itens horizontalmente */
     flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha em telas menores */
@@ -190,6 +146,7 @@ button {
 }
 
 .social-image-links a {
+    
     /* Estilo do CÍRCULO e do LINK */
     display: block; /* Garante que o link ocupe todo o espaço do círculo */
     width: 70px; /* Largura do círculo */
