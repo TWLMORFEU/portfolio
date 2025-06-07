@@ -161,6 +161,25 @@ section.projetos img {
     border: 2px solid rgba(255, 255, 255, 0.856);
 }
 
+ section.concluidos {
+    text-align: center;
+    padding: 30px;
+    border: 3px solid rgba(255, 255, 255, 0.856);
+    background-color: #0e0e0e;
+    border-radius: 12px;
+    box-shadow: 9px 19px 17px nova imagnsrgba(0, 0, 0, 0.1)
+}
+
+section.concluidos li {
+   text-align: start;
+   text-align: justify;
+}
+
+section.concluidos ul {
+   list-style-position: inside; 
+   padding-left: 0px;
+}
+
 section.plano-de-estudos {
     text-align: center;
     padding: 30px;
@@ -255,6 +274,13 @@ section#stack img:hover {
     }
 }
 
+@media (min-width: 647px) {
+    section.concluidos ul {
+        list-style-position: inside; 
+        padding-left: 0px;
+        columns: 2;
+    }
+}
 
 @media (max-width: 480px) {
     #social-links ul.social-icons a {
