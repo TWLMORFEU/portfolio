@@ -23,10 +23,10 @@ header {
 }
 
 .profile-photo-container {
-    width: 170px !important;
-    height: 170px !important;
+    width: 150px !important;
+    height: 150px !important;
     margin: 0 auto 20px;
-    border-radius: 30%;
+    border-radius: 20%;
     overflow: hidden;
     border: 5px solid #000000; /* Borda branca ao redor da foto */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
