@@ -9,6 +9,10 @@ body {
     background: linear-gradient(to top, rgb(10, 10, 10), rgb(56, 55, 55),  rgb(10, 10, 10));
 }
 
+html {
+    background-color: #000000;
+}
+
 .container {
     max-width: 960px;
     margin: 0 auto;
@@ -16,8 +20,7 @@ body {
 }
 
 /* Cabeçalho */
-header {
-   
+header { 
     color:  rgba(255, 255, 255, 0.89);
     padding: 40px 20px;
     text-align: center;
