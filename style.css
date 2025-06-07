@@ -23,10 +23,10 @@ header {
 }
 
 .profile-photo-container {
-    width: 150px !important;
-    height: 150px !important;
+    width: 170px !important;
+    height: 170px !important;
     margin: 0 auto 20px;
-    border-radius: 20%;
+    border-radius: 50%;
     overflow: hidden;
     border: 5px solid #000000; /* Borda branca ao redor da foto */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -116,6 +116,18 @@ section#stack li {
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito suave ao passar o mouse */
     background-color: white; /* Cor de fundo para o círculo (se a imagem não preencher tudo) */
     border: 2px solid rgb(255, 255, 255);
+}
+
+section.plano-de-estudos {
+    text-align: center;
+    padding: 30px;
+    background-color: #0e0e0e;
+    border-radius: 12px;
+    box-shadow: 9px 19px 17px nova imagnsrgba(0, 0, 0, 0.1);
+}
+
+section.plano-de-estudos li {
+   text-align: start;
 }
 
 section#stack img:hover {
