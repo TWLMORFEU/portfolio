@@ -152,8 +152,8 @@ section.projetos img {
     object-fit: cover;
     border-radius: 8px;
     overflow: hidden;
-    margin-bottom: 20px;
-    
+    margin-bottom: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.856);
 }
 
 section.plano-de-estudos {
