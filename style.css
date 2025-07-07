@@ -6,7 +6,7 @@ body {
     background-color: #000000;
     color: #ffffff;
     line-height: 1.6;
-    background: linear-gradient(to top, rgb(10, 10, 10), rgb(56, 55, 55),  rgb(10, 10, 10));
+    background-color: #000000;
 }
 
 html {
@@ -240,11 +240,11 @@ section#stack img:hover {
     display: block; /* Garante que o link ocupe todo o espaço do círculo */
     width: 70px; /* Largura do círculo */
     height: 70px; /* Altura do círculo (igual à largura para ser redondo) */
-    border-radius: 50%; /* **CHAVE:** Transforma o elemento em um círculo */
+    border-radius: 9%; /* **CHAVE:** Transforma o elemento em um círculo */
     overflow: hidden; /* **CHAVE:** Corta qualquer parte da imagem que saia do círculo */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra para dar profundidade */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito suave ao passar o mouse */
-    background-color: #e0e0e0; /* Cor de fundo para o círculo (se a imagem não preencher tudo) */
+    background-color: white; /* Cor de fundo para o círculo (se a imagem não preencher tudo) */
     border: 2px solid rgb(255, 255, 255);
 }
 
