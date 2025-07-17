@@ -5,14 +5,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 body {
   background-color: #f0f8ff; /* Azul bebê */
   color: #001f3f; /* Azul marinho */
   line-height: 1.6;
+  text-align: justify;
 }
+
 
 /* Header */
 .header {
@@ -48,6 +50,7 @@ body {
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
+  
 }
 
 .header nav a:hover {
@@ -68,6 +71,11 @@ section h2 {
   display: inline-block;
 }
 
+section#estudos {
+  border: 3px solid #001f3f;
+  border-radius: 7px;
+}
+
 .container-da-imagem {
   background: transparent;
 }
@@ -83,8 +91,16 @@ section h2 {
 }
 
 .stack-icons img {
-  width: 60px;
-  height: 60px;
+  width: 90px;
+  height: 90px;
+  background-color: white;
+  border: 2px solid #001f3f;
+  border-radius: 30%;
+}
+
+#projetos {
+  border-top: 3px solid #001f3f;
+  width: 90vw;
 }
 
 /* Projetos */
@@ -93,14 +109,17 @@ section h2 {
   padding: 1rem;
   background-color: #ffffff;
   border-left: 5px solid #001f3f;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 2px rgba(0, 0, 0, 0.034);
 }
 
 .projeto img {
   width: 100%;
   max-width: 500px;
   margin-top: 1rem;
+  margin-bottom: 3rem;
   border-radius: 5px;
+  border: 3px solid #001f3f;
+  box-shadow: 4px 5px #001f3f50;
 }
 
 /* Plano de Estudos */
@@ -119,8 +138,10 @@ ul {
 }
 
 .redes a img {
-  width: 40px;
-  height: 40px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #001f3f;
   transition: transform 0.3s;
 }
 
