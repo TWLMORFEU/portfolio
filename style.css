@@ -9,7 +9,8 @@
 }
 
 body {
-  background-color: #f0f8ff; /* Azul bebê */
+  background-image: url(imagens/fundo.jpg.png);
+
   color: #001f3f; /* Azul marinho */
   line-height: 1.6;
   text-align: justify;
