@@ -9,9 +9,9 @@
 }
 
 body {
-  background-image: url(imagens/fundo.jpg.png);
+  background-image: url(/imagens/fundo.jpg.png);
 
-  color: #001f3f; /* Azul marinho */
+  color: #ffffff; /* Azul marinho */
   line-height: 1.6;
   text-align: justify;
 }
@@ -19,7 +19,7 @@ body {
 
 /* Header */
 .header {
-  background-color: #001f3f; /* Azul marinho */
+  background-color: #000000; /* Azul marinho */
   color: #ffffff;
   text-align: center;
   padding: 2rem 1rem;
@@ -41,28 +41,33 @@ body {
 
 .header .tagline {
   font-style: italic;
-  color: #87cefa; /* Azul bebê mais forte */
+  color: #ffffff; /* Azul bebê mais forte */
   margin-bottom: 1rem;
 }
 
 .header nav a {
-  margin: 0 1rem;
-  color: #87cefa; /* Azul bebê */
+  margin: 3px;
+  color: #ffffff; /* Azul bebê */
   text-decoration: none;
   font-weight: bold;
+  padding: 3px;
   transition: color 0.3s ease;
   
 }
 
 .header nav a:hover {
-  color: #ffffff;
+  color: #001f3f;
+  background-color: #ffffff;
 }
 
 /* Seções */
 section {
   padding: 2rem 1rem;
   max-width: 900px;
-  margin: auto;
+  margin: 20px auto;
+  background-color: #000000;
+  border-radius: 8px;
+  border: 2px solid white;
 }
 
 section h2 {
