@@ -45,14 +45,20 @@ body {
   margin-bottom: 1rem;
 }
 
+.header nav {
+  background-color: white;
+  padding: 2px;
+} 
+
 .header nav a {
   margin: 3px;
-  color: #ffffff; /* Azul bebê */
+  color: white; /* Azul bebê */
   text-decoration: none;
   font-weight: bold;
-  padding: 3px;
+  justify-items: space-between;
+  padding: 5px 0px;
   transition: color 0.3s ease;
-  
+  background-color: #001f3f;
 }
 
 .header nav a:hover {
@@ -72,9 +78,10 @@ section {
 
 section h2 {
   color: #001f3f; /* Azul marinho */
-  margin-bottom: 1rem;
+  margin: 0px 0px 1rem auto;
   border-bottom: 2px solid #001f3f;
   display: inline-block;
+  
 }
 
 section#estudos {
