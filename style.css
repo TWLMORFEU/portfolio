@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    width: 90vw;
+    background-color: rgb(48, 48, 48);
+    color: aliceblue;
+}
+
+.stacks img {
+   width: 6rem;
+   
+}
+
+.pro img {
+
+}
