@@ -29,26 +29,3 @@ body {
 img {
     width: 100px;
 }
-
-.todo {
-    margin: auto;
-}
-
-.stacks {
-    background-color: #1e1e1e;
-    display: flex;
-    padding: 10px;
-
-}
-
-.stacks img {
-    width: 100px;
-    
-}
-
-main {
-    background-color: var(--cor-gato-orelha);
-    padding: 15px;
-    width: 95vw;
-    margin: auto;
-}
