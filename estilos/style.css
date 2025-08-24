@@ -10,10 +10,12 @@
 
 
 
-/* Seção de Introdução */
+
 #introducao {
     padding: 60px 20px;
     background-color: #0d0d0d;
+    height: 90vh;
+    align-content: center;
 }
 
 .intro-container {
@@ -33,7 +35,7 @@
 .intro-foto img {
     width: 250px;
     height: 250px;
-    border-radius: 50%;
+    border-radius: 16%;
     border: 4px solid #00b4d8;
     object-fit: cover;
 }
@@ -51,6 +53,7 @@
 .intro-texto p {
     font-size: 1rem;
     color: #ccc;
+    line-height: 1.6;
 }
 
 /* Responsivo */
@@ -71,8 +74,9 @@
 
 
 img {
-    width: 200px;
+    width: 200px;  /*Retirar*/
 }
+
 
 h2 {
     text-align: center;
@@ -95,9 +99,8 @@ h2 {
     background-color: #111;
     align-items: center;
 }
-
-.card {
-    background: #111;
+ .card {
+    background: transparent; /* remove fundo preto do card */
     border: 1px solid #222;
     border-radius: 12px;
     padding: 30px 20px;
@@ -109,24 +112,20 @@ h2 {
 
 .card:hover {
     transform: translateY(-8px);
-    background: #1a1a1a;
     border-color: #00b4d8;
 }
 
-.card h3 {
-    margin-top: 10px;
-    font-size: 1.4rem;
-    color: #00b4d8;
-}
 
-.card p {
-    margin-top: 10px;
-    font-size: 0.95rem;
-    color: #ccc;
-}
-
-.icon, img {
-    font-size: 3rem;
+.card img {
     width: 140px;
     margin: auto;
+    border-radius: 12px;
+    background: transparent; 
+    box-shadow: 0 0 20px rgba(0,180,216,0.7), 0 0 40px rgba(0,180,216,0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(0,180,216,1), 0 0 50px rgba(0,180,216,0.7);
 }
