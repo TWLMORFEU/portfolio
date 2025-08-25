@@ -13,11 +13,10 @@ body {
 }
 
 #introducao {
-    padding: 60px 20px;
-    background-color: #000000;
-    height: 90vh;
-    align-content: center;
+    padding: 60px 20px 40px 20px; /* topo, direita, baixo, esquerda */
+    background-color: #000;
 }
+
 
 .menu-flutuante {
   position: fixed;      /* fixa na lateral */
@@ -83,7 +82,7 @@ body {
 }
 
 .intro-texto {
-    flex: 2 1 500px;
+    flex: 2 1 0px;
 }
 
 .intro-texto h1 {
@@ -546,4 +545,13 @@ h2 {
   margin-top: 30px;
   font-size: 0.85rem;
   color: rgb(183, 220, 248);
+}
+
+
+
+
+@media (max-width: 480px) {
+  .intro-container {
+    gap: 15px;
+  }
 }
