@@ -125,11 +125,10 @@ body {
   --accent: #00b4d8;
   --text: #e6f7ff;
 
+}
 
-  html {
+html {
     scroll-behavior: smooth;
-  }
-
 }
 
 .cert-tile {
@@ -145,6 +144,7 @@ body {
   font-family: Inter, "Segoe UI", Roboto, system-ui, sans-serif;
   border: 1px solid rgba(0,180,216,0.06);
   margin: auto;
+  margin-bottom: 50px;
 }
 
 /* header */
@@ -301,9 +301,8 @@ h2 {
     gap: 20px;
     max-width: 100%;
     margin: auto;
-    height: 98vh;
     padding: 20px;
-    align-items: center;
+    align-items: start;
     
 }
 
