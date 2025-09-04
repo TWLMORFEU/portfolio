@@ -129,7 +129,7 @@ body {
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .cert-tile {
@@ -548,9 +548,6 @@ h2 {
   font-size: 0.85rem;
   color: rgb(183, 220, 248);
 }
-
-
-
 
 @media (max-width: 480px) {
   .intro-container {
